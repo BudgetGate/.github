@@ -1,3 +1,5 @@
+<p align="center"><img src="avatar.png" width="120" alt="Budget Gate logo: a resource-cost gauge behind a gate bar"></p>
+
 # Budget Gate
 
 **Catch Soroban resource-cost regressions in pull requests.**
