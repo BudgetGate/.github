@@ -1,0 +1,33 @@
+name: Feature request
+description: Something Budget Gate should measure, report or show.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Budget Gate measures Soroban resource cost by simulation and tracks it over time. Out of scope: static analysis or vulnerability scanning (Scout-Soroban covers that), correctness checks, and general Stellar tooling such as wallets or analytics.
+  - type: dropdown
+    id: part
+    attributes:
+      label: Which part?
+      options:
+        - core (budget-core CLI)
+        - GitHub Action
+        - fixture script (examples/build-fixture.sh)
+        - dashboard
+        - docs site
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What you are trying to do and what gets in the way today.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would solve it
+    validations:
+      required: true

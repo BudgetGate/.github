@@ -1,0 +1,47 @@
+name: Bug report
+description: Core, the GitHub Action, the dashboard or the docs do not work as documented.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please report security problems privately, through the repository's **Security** tab ("Report a vulnerability"), not in an issue.
+  - type: dropdown
+    id: part
+    attributes:
+      label: Which part?
+      options:
+        - core (budget-core CLI)
+        - GitHub Action
+        - fixture script (examples/build-fixture.sh)
+        - dashboard
+        - docs site
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The core release (`binary-version`, or the binary you downloaded), the Action tag, or the page URL.
+      placeholder: core v0.2.3, Action v0.2.2
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what you expected
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How to reproduce
+      description: The command or workflow step, the network and RPC URL (if not the default testnet one), and the fixture or snapshot if you can share it.
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Output
+      description: Core's report and stderr with its exit code, or the Action's log. Remove any RPC URL that contains an API key.
+      render: text
