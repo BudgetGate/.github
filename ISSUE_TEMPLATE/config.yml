@@ -1,0 +1,7 @@
+contact_links:
+  - name: Documentation
+    url: https://budgetgate.github.io/docs/
+    about: Setup, flags, inputs, the snapshot format and each part's known limitations.
+  - name: Report a security problem
+    url: https://github.com/BudgetGate/soroban-budget-core/security/advisories/new
+    about: Report privately; do not open a public issue. (Use the Security tab of the affected repository.)
