@@ -6,7 +6,7 @@
 
 Budget Gate simulates your contract's calls through the Soroban RPC (`simulateTransaction`), records CPU instructions, read and write bytes, and footprint entries as a baseline, and flags a pull request when a function costs more than it did or gets close to the network's per-transaction limits, which it reads live from the network.
 
-It gates pull requests on cost measured for each function on a real network, which estimators, rent calculators and static analyzers do not set out to do, and it complements them.
+It gates pull requests on cost measured for each function on a real network. It complements cost estimators, rent calculators and static analyzers rather than replacing them.
 
 **Demo:** [75 seconds, with captions](https://budgetgate.github.io/docs/#see-it-run).
 
