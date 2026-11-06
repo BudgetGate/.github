@@ -17,6 +17,10 @@ It gates pull requests on cost measured for each function on a real network. It 
 - **[soroban-budget-dashboard](https://github.com/BudgetGate/soroban-budget-dashboard)**: charts a contract's cost history over commits ([live](https://budgetgate-dashboard.vercel.app/)).
 - **[docs](https://github.com/BudgetGate/docs)**: user documentation at [budgetgate.github.io/docs](https://budgetgate.github.io/docs/).
 
+## Community
+
+Questions and ideas: [Discussions](https://github.com/BudgetGate/soroban-budget-core/discussions). Report security issues privately through each repository's Security tab.
+
 ## Status
 
 Early-stage. Not audited and not production-ready. Measuring changed contracts is verified on Stellar testnet; on mainnet, only a read-only call has been measured.
